@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PARISARA CYCLE"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp" />
+
+        <!-- BUTTONS -->
+
+        <Button
+            android:id="@+id/btnLoadMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load Safe Route Map"
+            android:backgroundTint="#4CAF50" />
+
+        <Button
+            android:id="@+id/btnLoadDanger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load Danger Zones"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#D32F2F" />
+
+        <!-- MAP -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🗺 Safe Route Map"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingTop="25dp" />
+
+        <WebView
+            android:id="@+id/webMap"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginTop="10dp" />
+
+        <!-- ECO -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌱 Eco Stats"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingTop="25dp" />
+
+        <TextView
+            android:id="@+id/tvEcoStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading eco stats..."
+            android:textSize="18sp"
+            android:paddingTop="10dp" />
+
+        <!-- BUDDY -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👥 Buddy System"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingTop="25dp" />
+
+        <TextView
+            android:id="@+id/tvBuddy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading riders..."
+            android:textSize="18sp"
+            android:paddingTop="10dp" />
+
+        <!-- DANGER ZONES -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚠️ Danger Zones"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingTop="25dp" />
+
+        <TextView
+            android:id="@+id/tvDangerZones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No danger zones loaded"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="40dp" />
+
+    </LinearLayout>
+
+</ScrollView>
